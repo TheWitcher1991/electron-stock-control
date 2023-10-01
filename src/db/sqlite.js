@@ -25,7 +25,6 @@ db.serialize(() => {
             name VARCHAR NOT NULL,
             sector VARCHAR NOT NULL,
             email VARCHAR NOT NULL UNIQUE,
-            password VARCHAR NOT NULL,
             code VARCHAR NOT NULL,
             date DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL 
         )

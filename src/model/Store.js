@@ -1,5 +1,5 @@
 const db = require('../db/sqlite')
-const { promisify, placeholders, isArray, isNumber, isset, isObject } = require('../import/config')
+const { promisify, placeholders, isArray, isNumber, isset, isObject } = require('../import/utils/config')
 
 class Store {
     static table = 'store'

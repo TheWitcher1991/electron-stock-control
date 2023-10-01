@@ -1,4 +1,17 @@
 module.exports = {
+    key: 'MIGqAgEAAiEAijLGRI5kZLTZTsqQu/AaCgO+Tgr5QunLdOv6uTtXqeECAwEAAQIhAIX3Vm+awQNGtOlGQCuPQw1HV6kxQKWihhWPVR15vYoBAhEA0fHbdX8qe3PUBH7vzzQ+8QIRAKiDwniNnHfODtNnx9jw+fECEE093rBsCQVCqE6/JRvm7QECEFv6719WDJ3oP3dtIkxr3EECEAxJVEddin5dTFoICz8fDdg=',
+
+    keyGenerator: len => {
+    const letters = 'abcdefghijklmnopqrstuvwxyz0123456789'
+        let word = ''
+
+        for (let i = 0; i < len; i++) {
+            word += letters.charAt(Math.floor(Math.random() * letters.length))
+        }
+
+        return (word.substr(0, 5) + '-' + word.substr(5, 5) + '-' + word.substr(10, 5)).toUpperCase()
+    },
+
     isNumber: vars => Number.isInteger(vars),
 
     isArray: vars => Array.prototype.isArray(vars),

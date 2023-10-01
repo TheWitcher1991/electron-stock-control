@@ -1,0 +1,123 @@
+.global__input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#create {
+    display: flex;
+}
+
+.global__input-container {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.global__input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    > i {
+        font-size: 56px;
+        margin: 0 auto;
+        color: var(--actHover)
+    }
+
+    h1 {
+        margin: 6px 0 4px 0;
+        padding: 0;
+        font-size: 24px;
+    }
+
+    span, p {
+        color: var(--fg400)
+    }
+
+    span {
+        display: block;
+        margin: 0 0 16px 0;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 0;
+        margin: 0 0 16px 0;
+    }
+
+    button {
+        border-radius: 6px;
+        height: 36px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        color: var(--bthFg);
+        align-items: center;
+        font-weight: 400;
+        font-size: 15px;
+        background: var(--activeFg);
+        cursor: pointer;
+        border: 0;
+        transition: all .2s linear;
+        outline: none;
+
+        &:hover {
+            background: var(--actHover);
+        }
+    }
+
+}
+
+.auth__label {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+    padding: 0 12px;
+    margin: 0 0 16px 0;
+    background: var(--fg500);
+    border: 1px solid var(--fg500);
+    transition: all 0.2s ease-in-out 0s;
+
+    &:hover {
+        background: transparent;
+    }
+
+    &:focus-within {
+        border-color: var(--activeFg);
+        background: transparent;
+
+        i {
+            color: var(--activeFg);
+        }
+    }
+
+    i {
+        transition: all 0.2s ease-in-out 0s;
+        color: var(--icon);
+        font-size: 15px;
+    }
+
+    input {
+        width: 100%;
+        outline: 0;
+        border: 0;
+        background: rgba(0,0,0,0);
+        color: var(--mainFg);
+        padding: 0 0 0 10px;
+        font-size: 14px;
+        font-weight: 400;
+
+
+    }
+}

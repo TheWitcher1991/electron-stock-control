@@ -15,15 +15,54 @@
 </head>
 <body>
 
-<div class="auth__wrap">
-    <div class="auth__container">
-
-    </div>
+<div class="window__button" style="-webkit-app-region: drag">
+    <div style="-webkit-app-region: no-drag;font-size: 15px" class="info-button top-bth-f"><i class="fa-regular fa-circle-info"></i></div>
+    <div style="-webkit-app-region: no-drag" id="minimize-button" class="minimize-button top-bth-f"><i class="fa-solid fa-window-minimize"></i></div>
+    <div style="-webkit-app-region: no-drag" id="close-button" class="close-button top-bth-f"><i class="fa-solid fa-xmark"></i></div>
 </div>
 
 <main id="wrapper" class="wrapper">
 
+    <div class="global__input" id="auth">
+        <div class="auth__container global__input-container">
+            <div class="auth__form global__input-form">
+                <i class="fa-regular fa-arrow-right-to-bracket"></i>
+                <h1>Здравствуйте!</h1>
+                <span>Введите ключ доступа</span>
+                <label class="auth__label" for="global__key">
+                    <i class="fa-regular fa-key"></i>
+                    <input type="text" id="global__key" placeholder="Ключ доступа">
+                </label>
+                <button class="auth__button">Войти</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="global__input" id="create">
+        <div class="create__container global__input-container">
+            <div class="create__form global__input-form">
+                <i class="fa-light fa-address-card"></i>
+                <h1>Добро пожаловать!</h1>
+                <span>Создайте аккаунт вашей организации</span>
+                <label class="auth__label" for="global__name">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="global__name" placeholder="Название организации">
+                </label>
+                <label class="auth__label" for="global__sector">
+                    <i class="fa-regular fa-wheat"></i>
+                    <input type="text" id="global__sector" placeholder="Отрасль организации">
+                </label>
+                <label class="auth__label" for="global__email">
+                    <i class="fa-regular fa-at"></i>
+                    <input type="text" id="global__email" placeholder="Ваш email">
+                </label>
+                <p>После регистрации Вы получите ключ доступа, по которому будете авторизовываться в системе</p>
+                <button class="create__button">Создать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="main"></div>
 
 </main>
 

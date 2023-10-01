@@ -1,4 +1,4 @@
-const db = require('../db/sqlite')
+const db = require('../../db/sqlite')
 const { promisify } = require('./config')
 
 class SQL {
